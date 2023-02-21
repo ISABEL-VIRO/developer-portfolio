@@ -33,9 +33,11 @@ button{
   border: none;
   font-size: var(--sm);
   color:#ffffff;
+  background-color: var(--blue);
   border-radius:15px;
-  padding:4px 8px ;
-  box-shadow:0 0 8px #5d5aff ;
+  padding:4px 12px ;
+  margin: 2em 0;
+  cursor:pointer;
 }
 
 .icon{ 
@@ -91,6 +93,18 @@ button{
       background-color:var(--blue);
     }
 
+    .network-items li{
+      border: solid 1px #ffffff;
+      /* padding:3px; */
+      border-radius:10px ;
+    }
+  
+    .menu-items li {
+      background-color: var(--blue);
+      /* padding: 2px 10px; */
+      border-radius:22px;
+    }
+
     .title {
       display: flex;
       flex-direction: column;
@@ -133,12 +147,98 @@ button{
       height: 300px;
       overflow: hidden;
       border-radius: 50%;
+      margin: 15px;
   
+    }
+
+    .about-me{
+      text-align: justify;
+      padding: 8px;
+      margin-bottom: 1em;
     }
     
 
+    .container-projects{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+  .card-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: var(--blue);
+    padding: 33px;
+    border-radius: 10px;
+  }
+  .tecnhologies{
+    display: flex;
+    flex-direction:row;
+    column-gap: 8px;
+
+  }
+  .tecnhologies li{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(0, 0, 0, .4);
+    border-radius: 20px;
+    color:#ffffff; 
+    font-size: 15px;
+    font-weight: 300;
+    padding: 2px 20px;
+
+  }
+
+  #git-project{
+    padding:0;
+    overflow: hidden;
+  }
+
+    #git-project img{
+      object-fit: cover;
+      background-color: rgb(0, 0, 0);
+      width:30px;
+      border-radius: 20px;
+    }
+
+
 /* verMovil */
 @media only screen and (max-width : 900px) {
+  .menu nav{
+    flex-direction: column-reverse;
+    row-gap: 8px;
+  }
+
+  nav ul{
+    display: flex;
+    padding:0;
+    margin: 0;
+    margin-top:6px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .network-items{
+    display: flex;
+    column-gap: 10px;
+  }
+
+  .network-items li{
+    border: solid 1px #ffffff;
+    padding:3px;
+   }
+
+  .menu-items li {
+    padding: 2px 10px;
+   }
+
   .introduce{
     display:flex;
     flex-direction: column;
@@ -185,8 +285,28 @@ button{
   .description{
     width: 90%;
   }
+  button{
+    padding: 3px 30px;
+  }
+
+
+  .container-projects{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+.card-project{
+  height: auto;
+}
+
+.tecnhologies{
+  display: flex;
+  
+}
 
   }
+
 
 
 

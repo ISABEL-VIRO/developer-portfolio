@@ -4,22 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="style.css">
     <title>Hi World !</title>
   </head>
   <body>
     <div class="content-menu">
       <div class="menu">
         <nav>
-          <ul>
-            <li>Sobre Mi</li>
-            <li>Proyectos</li>
-            <li>Charlemos</li>
+          <ul class ="menu-items">
+            <li><a href="#aboutMe">Conoceme</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="mailto:isabel.vi.ro.4@outlook.com">Charlemos</a></li>
+          </ul >
+
+          <ul class="network-items">
+            <li><a href="#"><img class="icon network" src="/img/icons/github.webp" alt="GitHub"></a></li>
+            <li><a href="https://www.linkedin.com/in/isabel-villanueva-romero/"><img class="icon network" src="/img/icons/linkedin.webp" alt="Linkedin"></a></li>
           </ul>
 
-          <ul>
-            <li>link</li>
-            <li>Git</li>
-          </ul>
         </nav>
       </div>
     </div>
@@ -28,76 +30,84 @@
       <div class="introduce">
         <div class="introduce-info">
           <div class="title">
-            <h3>Hi World, nice to meet you !</h3>
-            <h2>Isabel Villanueva :)</h2>
-            <h3>Frontend Developer</h3>
+            <h3 class="
+            greeting">Hi World!</h3>
+            <h2 class="name">Isabel Villanueva</h2>
+            <h3 class="profile">Frontend Developer</h3>
           </div>
 
           <div class="description">
             <p>
-              Pasión por siempre aprender 📖, developer 👩‍💻con ganas de convertir cafe ☕ en codigo y desmostrar mis habilidades en cada proyecto.
+              Pasión por siempre aprender 📖, developer 👩‍💻con ganas de convertir cafe ☕ en codigo y poner en accion mis habilidades en cada proyecto.
             </p>
           </div>
 
         </div>
 
         <div class="photo-me">
-          <img src="img/#" alt="" />
+          <img src="img/img_me.jpg" alt="" />
         </div>
 
       </div>
 
 
-      <div class="about-me">
-        <div>
-          <h2>Sobre de Me</h2>
+      <div class="about-me" id="aboutMe">
+          <h2>Sobre de mi</h2>
           <hr>
-        </div>
-        <div class="about-info">
           <p>
-            Datos Relevantes .......
+            Ing. en Sistemas Computacionales egeresada con exito en el 2020 del Tecnologico de Estudio Superiores de Tianguistenco.
           </p>
-        </div>
+          <p>
+            Durante 2 años he tenido la oportunidad de desarrollar  e-comercer y paginas web con Wordpress junto con Elementor.
+          </p>
+          <p>
+            Actualmente busco fortalecer mi experiencia en el Desarrollo Frontend en base a más codigo ,programando en HTML, JS, CSS y un Framework, ademas de un nuevo reto que me permita seguir creciendo como profesional del sector.
+          </p>
+      
+          <button>
+            Descargar CV 
+          <span><img class="icon" src="img/icons/dowland_cv.png" alt="Dowland CV"></span>
+          </button>
 
-        <div class="experience">
-
-          Experience.....
-        </div>
-
-        <div class="contact-me">
-          <button>Contáctame :)</button>
-        </div>
       </div>
 
-      <div class="work">
-        <div>
+        
+      <div class="work" id="proyectos">
         <h2>Proyectos Personales</h2>
         <hr>
-      </div>
 
-      <div class="content-projects">
-        <div class="project">
+        <div class="container-projects">
 
-          <div class="view-project">
-            <img src="" alt="">
-
-            <div class="view-repositor">
-              <li>
-                <a href="#">Git Demo</a>
-              </li>
-            </div>
-          </div>
-
-          <div class="skills">
-            <ul>
+          <div class="card-project">
+            <h3>Calculadora</h3>
+            <img src="img/calculator.jpg" alt="Proyceto de calculadora">
+            <ul class="tecnhologies">
               <li>HTML</li>
               <li>Css</li>
               <li>JS</li>
+              <li id="git-project"><img class="icon" src="img/icons/github.webp" alt=""></li>
             </ul>
           </div>
-        </div>
 
+          <div class="card-project">
+            <h3>Calculadora2</h3>
+            <img src="img/calculator.jpg" alt="Proyceto de calculadora">
+            <ul class="tecnhologies">
+              <li>HTML</li>
+              <li>Css</li>
+              <li>JS</li>
+              <li id="git-project"><img class="icon" src="img/icons/github.webp" alt=""></li>
+          
+            </ul>
+          </div>
+
+        </div>
       </div>
+
+    
+  
+
+
       </div>
     </div>
   </body>
