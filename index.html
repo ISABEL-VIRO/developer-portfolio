@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <link rel="stylesheet" href="style.css">
+     <link rel="shortcut icon" href="img/icons/code-slash-outline.svg" type="image/x-icon">
     <title>Hi World !</title>
   </head>
   <body>
@@ -18,8 +19,8 @@
           </ul >
 
           <ul class="network-items">
-            <li><a href="#"><img class="icon network" src="/img/icons/github.webp" alt="GitHub"></a></li>
-            <li><a href="https://www.linkedin.com/in/isabel-villanueva-romero/"><img class="icon network" src="/img/icons/linkedin.webp" alt="Linkedin"></a></li>
+            <li><a href="#"><ion-icon  class="icon-network" name="logo-github"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/isabel-villanueva-romero/"><ion-icon class="icon-network" name="logo-linkedin"></ion-icon></a></li>
           </ul>
 
         </nav>
@@ -52,13 +53,27 @@
 
 
       <div class="about-me" id="aboutMe">
+        <div class="skill">
+          <p>< skills ></p>
+          <ul>
+              <li><ion-icon class="icon-skill" name="logo-html5"></ion-icon></li>
+              <li><ion-icon class="icon-skill" name="logo-css3"></ion-icon></li>
+              <li><ion-icon class="icon-skill" name="logo-javascript"></ion-icon></li>
+              <li><ion-icon class="icon-skill" name="logo-wordpress"></ion-icon></li>
+              <li><ion-icon class="icon-skill" name="server-outline"></ion-icon></li>
+            </ul>
+            <p>< skills ></p>
+        </div>
+
+
+        <div class="about-description">
           <h2>Sobre de mi</h2>
-          <hr>
+         
           <p>
-            Ing. en Sistemas Computacionales egeresada con exito en el 2020 del Tecnologico de Estudio Superiores de Tianguistenco.
+            Soy Ing. en Sistemas Computacionales egresada con exito en el 2020 del Tecnologico de Estudio Superiores de Tianguistenco.
           </p>
           <p>
-            Durante 2 años he tenido la oportunidad de desarrollar  e-comercer y paginas web con Wordpress junto con Elementor.
+            Durante 2 años he tenido la oportunidad de desarrollar  e-comercer y paginas web con Wordpress y Elementor.
           </p>
           <p>
             Actualmente busco fortalecer mi experiencia en el Desarrollo Frontend en base a más codigo ,programando en HTML, JS, CSS y un Framework, ademas de un nuevo reto que me permita seguir creciendo como profesional del sector.
@@ -66,38 +81,39 @@
       
           <button>
             Descargar CV 
-          <span><img class="icon" src="img/icons/dowland_cv.png" alt="Dowland CV"></span>
+            <ion-icon class="icon-cv " name="document-attach-outline"></ion-icon>
           </button>
+        </div>
 
       </div>
 
         
       <div class="work" id="proyectos">
         <h2>Proyectos Personales</h2>
-        <hr>
 
         <div class="container-projects">
 
           <div class="card-project">
             <h3>Calculadora</h3>
-            <img src="img/calculator.jpg" alt="Proyceto de calculadora">
+            <ion-icon name="calculator-outline"></ion-icon>
+            <!-- <img src="img/calculator.jpg" alt="Proyecto de calculadora"> -->
             <ul class="tecnhologies">
-              <li>HTML</li>
-              <li>Css</li>
-              <li>JS</li>
-              <li id="git-project"><img class="icon" src="img/icons/github.webp" alt=""></li>
+              <li><ion-icon class="icon-tech" name="logo-html5"></ion-icon></li>
+              <li><ion-icon class="icon-tech" name="logo-css3"></ion-icon></li>
+              <li><ion-icon class="icon-tech" name="logo-javascript"></ion-icon></li>
+              <li><a href="#"><ion-icon  class="icon-tech" name="logo-github"></ion-icon></a></li>
             </ul>
           </div>
 
           <div class="card-project">
-            <h3>Calculadora2</h3>
-            <img src="img/calculator.jpg" alt="Proyceto de calculadora">
+            <h3>Calculadora</h3>
+            <ion-icon name="calculator-outline"></ion-icon>
+            <!-- <img src="img/calculator.jpg" alt="Proyecto de calculadora"> -->
             <ul class="tecnhologies">
-              <li>HTML</li>
-              <li>Css</li>
-              <li>JS</li>
-              <li id="git-project"><img class="icon" src="img/icons/github.webp" alt=""></li>
-          
+              <li><ion-icon class="icon-tech" name="logo-html5"></ion-icon></li>
+              <li><ion-icon class="icon-tech" name="logo-css3"></ion-icon></li>
+              <li><ion-icon class="icon-tech" name="logo-javascript"></ion-icon></li>
+              <li><a href="#"><ion-icon  class="icon-tech" name="logo-github"></ion-icon></a></li>
             </ul>
           </div>
 
@@ -110,5 +126,13 @@
 
       </div>
     </div>
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
