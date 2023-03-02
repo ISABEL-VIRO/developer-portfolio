@@ -199,11 +199,11 @@ width: 40%;
   position:relative;
   width: 400px;
   height: 400px;
-      overflow: hidden;
-      border-radius: 50%;
-      margin: 15px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 15px;
       
-    }
+}
     
     .work{
       display: flex;
@@ -222,17 +222,62 @@ width: 40%;
   column-gap:10px;
   }
   
-  .card-project{
+.card-project{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: auto;
-    background-color: var(--blue);
-    padding: 33px;
-    border-radius: 10px;
+    transition: 0.5s;
   }
  
+  .card-project .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .card-project .circle::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:var(--blue);
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+  }
+
+  .card-project:hover .circle::before
+  {
+    background-color: #ffffff;
+    clip-path: circle(400px at center);
+
+  }
+
+  .card-project img{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    height:300px;
+    pointer-events:none;
+    transition:0.5s;
+  }
+
+  .card-project:hover img{
+    left:72%;
+    height:500px;
+  }
+
+ 
+
   .tecnhologies{
     display: flex;
     flex-direction:row;
@@ -241,7 +286,59 @@ width: 40%;
     font-size: 33px;
     padding: 0;
   }
+
+.card-project .info-project{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding:20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility:hidden;
+  }
   
+  .card-project:hover .info-project{
+    left: 0;
+    opacity: 1;
+    visibility:visible;
+  }
+
+  .card-project .info-project h2{
+    color: var(--blue);
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+  .card-project .info-project p{
+    color:#0000;
+  }
+
+
+  .card-project .info-project{
+    color:#ffffff;
+    position:relative;
+    padding: 10px 20px;
+    /* background: var(--blue); */
+  }
+.info-project li{
+  color:var(--blue)
+}
+.info-project li a{
+  color:var(--blue)
+}
+.info-project h3{
+  color: var(--blue);
+
+}
+
+.info-project a{
+  color:var(--blue);
+  font-weight:600;
+  
+}
+
+
 
 /* verMovil */
 @media only screen and (max-width : 900px) {
@@ -362,7 +459,6 @@ width: 40%;
 .about-description button{
  padding: 5px 44px;
 }
-
 
 
 
