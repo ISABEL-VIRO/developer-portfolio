@@ -165,8 +165,8 @@ h1,h2,h3 {
 
 
 .btn-dowland-cv:hover{
-  -webkit-box-shadow:5px 8px 5px 2px rgba(170, 183, 255, 0.5);
-  box-shadow: 5px 8px 5px 2px rgba(170, 183, 255, 0.5);
+  -webkit-box-shadow:5px 8px 5px 2px rgba(170, 183, 255, 0.7git );
+  box-shadow: 5px 8px 5px 2px rgba(170, 183, 255, 0.7);
   transform: translateY(-8px);
 }
 
@@ -335,6 +335,7 @@ width:45%;
   {
     background-color: #ffffff;
     clip-path: circle(400px at center);
+    width:75%;
 
   }
 
@@ -343,14 +344,14 @@ width:45%;
     top: 50%;
     left:50%;
     transform:translate(-50%, -50%);
-    height:300px;
+    height:200px;
     pointer-events:none;
     transition:0.5s;
   }
 
   .card-project:hover img{
-    left:72%;
-    height:500px;
+    left:60%;
+    height:360px;
   }
 
  
